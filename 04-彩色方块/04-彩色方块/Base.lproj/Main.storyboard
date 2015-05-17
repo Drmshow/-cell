@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ypS-bV-aFB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="rRN-og-2ju">
+            <objects>
+                <tableViewController id="ypS-bV-aFB" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="OmW-jj-nw7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="1cell" id="sNy-8V-Ux3" customClass="MZhTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sNy-8V-Ux3" id="fa5-PR-6qQ">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jU1-yW-MlS">
+                                            <rect key="frame" x="54" y="4" width="35" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="GCH-8q-I6D"/>
+                                                <constraint firstAttribute="width" constant="35" id="LPZ-gM-EL3"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="jU1-yW-MlS" firstAttribute="leading" secondItem="fa5-PR-6qQ" secondAttribute="leadingMargin" constant="46" id="heD-nh-zCI"/>
+                                        <constraint firstAttribute="centerY" secondItem="jU1-yW-MlS" secondAttribute="centerY" id="zTN-mN-BQb"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgView" destination="jU1-yW-MlS" id="hXb-uj-Ih4"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="2cell" id="nHd-RY-aIQ" customClass="MZhTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nHd-RY-aIQ" id="3gd-jE-Oc1">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJQ-9h-3zS">
+                                            <rect key="frame" x="31" y="4" width="35" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="fr2-Z6-sH4"/>
+                                                <constraint firstAttribute="width" constant="35" id="qUP-mp-2Gk"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="深夜2点月亮，清晨7点的太阳，我们就是站在码码一线的攻城狮" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="188" translatesAutoresizingMaskIntoConstraints="NO" id="fUJ-ve-DHP">
+                                            <rect key="frame" x="112" y="3" width="182" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="jJQ-9h-3zS" firstAttribute="leading" secondItem="3gd-jE-Oc1" secondAttribute="leadingMargin" constant="23" id="2nE-r4-Qe4"/>
+                                        <constraint firstItem="jJQ-9h-3zS" firstAttribute="bottom" secondItem="fUJ-ve-DHP" secondAttribute="bottom" constant="7" id="MBS-IR-yq1"/>
+                                        <constraint firstAttribute="centerY" secondItem="jJQ-9h-3zS" secondAttribute="centerY" id="bO5-aj-fsE"/>
+                                        <constraint firstItem="fUJ-ve-DHP" firstAttribute="leading" secondItem="jJQ-9h-3zS" secondAttribute="trailing" constant="46" id="nXQ-qk-pn5"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgView" destination="jJQ-9h-3zS" id="gFy-xt-jfV"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="ypS-bV-aFB" id="96P-vJ-sBR"/>
+                            <outlet property="delegate" destination="ypS-bV-aFB" id="xmJ-fF-179"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hl-ph-Llv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="217" y="116"/>
+        </scene>
+    </scenes>
+</document>
